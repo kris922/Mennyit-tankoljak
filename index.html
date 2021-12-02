@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js" defer></script>
+    <title>Mennyit tankoljak</title>
+</head>
+<body>
+
+<div id="title-bar">
+    <h1 >Mennyit tankoljak?</h1> 
+</div>
+<div id="main">
+    <div class="inside">
+        <section>
+
+            <h2>Milyen hosszú útra készülsz?</h2>
+
+            <form action="">
+
+                <div>
+                    <label for="distance">Távolság (km)</label>
+                    <input type="text" id="distance" onfocus="this.value=''" >
+                </div>
+                <div>
+                    <label for="avg">Átlagfogyasztás (L/100km) </label>
+                    <input type="text" id="avg" onfocus="this.value=''" >
+                </div>
+                <div>
+                    <label for="price">Üzemanyagár (HUF/L)</label>
+                    <input type="text" id="price" onfocus="this.value=''" >
+                </div>
+
+                <button>Kalkuláció</button>
+
+            </form>
+        
+        </section>    
+
+        <section class="collection">
+
+            <h2>Eredmény</h2>
+
+            <div class="result">
+
+                <h3>Szükséges mennyiség</h3>
+                <p class="amount">-</p>
+
+                <h3>Várható költség</h3>
+                <p class="total">-</p>
+            </div>
+
+        </section>
+    </div>
+</div>
+    
+</body>
+</html>
